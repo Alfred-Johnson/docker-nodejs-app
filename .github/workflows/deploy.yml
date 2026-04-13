@@ -1,14 +1,3 @@
-
-👉 These are Markdown code block symbols  
-👉 YAML file **must NOT contain them**
-
----
-
-# ✅ FIX (FINAL CORRECT FILE)
-
-👉 Replace your entire file with this EXACT version:
-
-```yaml
 name: CI/CD Pipeline
 
 on:
