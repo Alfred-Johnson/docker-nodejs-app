@@ -1,8 +1,10 @@
 const http = require('http');
 
+const http = require('http');
+
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-res.send("CI/CD SUCCESS 🚀 Alfred DevOps Project");
+
   res.end(`
   <!DOCTYPE html>
   <html>
@@ -28,59 +30,31 @@ res.send("CI/CD SUCCESS 🚀 Alfred DevOps Project");
       }
       .card {
         background: #1e293b;
-        padding: 20px;
-        margin: 15px 0;
+        padding: 15px;
+        margin: 10px 0;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
       .card h2 {
-        margin: 0 0 10px;
-        color: #facc15;
-      }
-      .footer {
-        text-align: center;
-        padding: 15px;
-        background: #1e293b;
-        margin-top: 20px;
-        color: #94a3b8;
-      }
-      .btn {
-        display: inline-block;
-        padding: 10px 15px;
-        background: #38bdf8;
-        color: black;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-top: 10px;
+        color: #38bdf8;
       }
     </style>
   </head>
-
   <body>
-    <header>🏆 Sports Hub Live</header>
-
+    <header>⚽ Sports Hub - CI/CD Live 🚀</header>
     <div class="container">
       <div class="card">
-        <h2>⚽ Football</h2>
-        <p>Latest updates from international football leagues.</p>
-        <a href="#" class="btn">View More</a>
+        <h2>Football</h2>
+        <p>Latest football news and updates.</p>
       </div>
-
       <div class="card">
-        <h2>🏏 Cricket</h2>
-        <p>Live scores, match highlights and player stats.</p>
-        <a href="#" class="btn">View More</a>
+        <h2>Cricket</h2>
+        <p>Live scores and match highlights.</p>
       </div>
-
       <div class="card">
-        <h2>🏀 Basketball</h2>
-        <p>NBA news, scores and trending players.</p>
-        <a href="#" class="btn">View More</a>
+        <h2>Basketball</h2>
+        <p>Top NBA games and player stats.</p>
       </div>
-    </div>
-
-    <div class="footer">
-      🚀 Deployed using Docker + Nginx + AWS EC2
     </div>
   </body>
   </html>
@@ -88,5 +62,5 @@ res.send("CI/CD SUCCESS 🚀 Alfred DevOps Project");
 });
 
 server.listen(3000, () => {
-  console.log('Server running on port 3000');
+  console.log("Server running on port 3000");
 });
