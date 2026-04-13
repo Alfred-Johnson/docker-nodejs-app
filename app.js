@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-
+res.send("CI/CD SUCCESS 🚀 Alfred DevOps Project");
   res.end(`
   <!DOCTYPE html>
   <html>
